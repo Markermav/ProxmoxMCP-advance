@@ -1,0 +1,18 @@
+{
+    "proxmox": {
+        "host": "PROXMOX_HOST",        # Required: Your Proxmox server address
+        "port": 8006,                  # Optional: Default is 8006
+        "verify_ssl": false,           # Optional: Set false for self-signed certs
+        "service": "PVE"               # Optional: Default is PVE
+    },
+    "auth": {
+        "user": "USER@pve",            # Required: Your Proxmox username
+        "token_name": "TOKEN_NAME",    # Required: API token ID
+        "token_value": "TOKEN_VALUE"   # Required: API token value
+    },
+    "logging": {
+        "level": "INFO",               # Optional: DEBUG for more detail
+        "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        "file": "proxmox_mcp.log"      # Optional: Log to file
+    }
+}
